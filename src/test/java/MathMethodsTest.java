@@ -16,10 +16,12 @@ public class MathMethodsTest {
     public void SumOfTwoPositiveValuesTest() {
         assertEquals(4.8, mathMethods.sumOfTwoValues(1.2, 3.6),  0.00001);
     }
+
     @Test
     public void SumOfValueAndMinusValueTest() {
         assertEquals(0, mathMethods.sumOfTwoValues(7.777, -7.777),  0.00001);
     }
+
     @Test
     public void DifferenceBetweenTwoNegativeValuesTest() {
         assertEquals(1, mathMethods.differenceBetweenTwoValues(-4.55, -5.55),  0.00001);
@@ -63,5 +65,15 @@ public class MathMethodsTest {
     @Test
     public void SinOfNegativeValueTest() {
         assertEquals(-0.99, mathMethods.sinOfValue(-7.7),  0.01);
+    }
+
+    @Test
+    public void СosOfPositiveValueTest() {
+        assertEquals(0.15, mathMethods.cosOfValue(7.7),  0.01);
+    }
+
+    @Test
+    public void TanOfNegativeValueTest() {
+        assertEquals(-0.60, mathMethods.tanOfValue(8.88),  0.01);
     }
 }
