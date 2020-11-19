@@ -2,24 +2,21 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-
+        int operator = 0;
         double firstValue = 0;
         double secondValue = 0;
-        int operator;
 
         Scanner input = new Scanner(System.in);
         MathMethods mathMethods = new MathMethods();
 
         System.out.print("\nInput first number: ");
         firstValue = input.nextDouble();
-        System.out.print("Input second number:");
+        System.out.print("Input second number: ");
         secondValue  = input.nextDouble();
-
         System.out.println("1. +\n2. -\n3. *\n4. /\n5. %\n6. ^2\n7. sin\n8. cos\n9. tan\n0. exit");
 
         do {
             System.out.println("Enter the operator!\n");
-
             operator = input.nextInt();
             switch(operator) {
                 case 1: System.out.println(firstValue + " + " + secondValue + " = " + mathMethods.sumOfTwoValues(firstValue, secondValue) + "\n");
@@ -40,8 +37,8 @@ public class Calculator {
                     break;
                 case 9: System.out.println("tan(" + firstValue + ")" + " = " + mathMethods.tanOfValue(firstValue) + "\n");
                     break;
-                default:  System.out.printf("Error! Enter correct operator");
-                    break;
+                default:  System.out.printf("Error! Enter correct operator.\n");
+                    return;
             }
         } while (operator != 0);
     }

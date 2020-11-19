@@ -1,40 +1,38 @@
-
 public class MathMethods {
-
-    public double sumOfTwoValues(double number1, double  number2) {
-        return number1 + number2;
+    public double sumOfTwoValues(double firstValue, double secondValue) {
+        return firstValue + secondValue;
     }
 
-    public double differenceBetweenTwoValues(double  number1, double  number2) {
-        return number1 - number2;
+    public double differenceBetweenTwoValues(double firstValue, double secondValue) {
+        return firstValue - secondValue;
     }
 
-    public double  multiplyTwoValues(double number1, double  number2) {
-        return number1 * number2;
+    public double  multiplyTwoValues(double firstValue, double secondValue) {
+        return firstValue * secondValue;
     }
 
-    public double  divisionOfTwoValues(double  number1, double number2) {
-        if (number2 == 0)
-            throw new IllegalArgumentException();
-        return number1 / number2;
+    public double  divisionOfTwoValues(double firstValue, double secondValue) {
+        if (secondValue == 0)
+            throw new IllegalArgumentException("Can't be divided by zero");
+        return firstValue / secondValue;
     }
-    public double  moduloOfTwoValues(double  number1, double number2) {
-        return number1 % number2;
-    }
-
-    public double  squaringValue(double  number1) {
-        return Math.pow(number1, 2);
+    public double  moduloOfTwoValues(double firstValue, double secondValue) {
+        return firstValue % secondValue;
     }
 
-    public double  sinOfValue(double  number1) {
-        return Math.sin(number1);
+    public double  squaringValue(double firstValue) {
+        return Math.pow(firstValue, 2);
     }
 
-    public double  cosOfValue(double  number1) {
-        return Math.cos(number1);
+    public double  sinOfValue(double firstValue) {
+        return Math.sin(firstValue);
     }
 
-    public double tanOfValue(double  number1) {
-        return Math.tan(number1);
+    public double  cosOfValue(double firstValue) {
+        return Math.cos(firstValue);
+    }
+
+    public double tanOfValue(double firstValue) {
+        return Math.tan(firstValue);
     }
 }
