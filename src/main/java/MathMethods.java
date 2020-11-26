@@ -16,6 +16,7 @@ public class MathMethods {
             throw new IllegalArgumentException("Can't be divided by zero");
         return firstValue / secondValue;
     }
+
     public double  moduloOfTwoValues(double firstValue, double secondValue) {
         return firstValue % secondValue;
     }
